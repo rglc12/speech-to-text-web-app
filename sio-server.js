@@ -8,9 +8,9 @@ app.use(express.static("./public"));
 
 io.on("connection", function(socket){
 
-    socket.on("transcript", function(final_transcript){
+    socket.on("transcript", function(data){
 
-       socket.broadcast.emit("transcipt", final_transcript)
+       socket.broadcast.emit("transcipt", data)
 
     });
 

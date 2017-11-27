@@ -111,7 +111,8 @@ window.onload = function() {
 
          */
 
-        document.getElementById("start").addEventListener("click", function(){
+        var start = document.getElementById("start");
+        start.addEventListener("click", function(){
 
             if (!recognition) {
 
@@ -119,8 +120,18 @@ window.onload = function() {
 
             }
             console.log("start recording");
+            socket.emit('transcript', transcription.innerHTML);
 
+            socket.on('transcript', function(data){
+
+                transcription.innerHTML = data;
+
+            });
         });
+
+
+
+
 
         window.addEventListener('keydown', function(e) {
 
@@ -163,7 +174,6 @@ window.onload = function() {
                     speech.stop(); // Ends the speech Recording
                     reset();
                     localStorage.setItem('transcript', final_transcript);
-
 
                 }
             }

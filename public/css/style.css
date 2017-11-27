@@ -18,7 +18,7 @@ h1{
 }
 
 .subTitle{
-  font-size: 1.2em;
+  font-size: 32px;
   font-weight: bold;
   padding-bottom: 2%;
   text-decoration: underline;
@@ -51,11 +51,16 @@ h1{
 li{
   list-style-type: none;
   padding: 1.5% 0%;
+  font-size: 26px;
 }
 
+<<<<<<< HEAD:public/css/style.css
 li a, #downloadButton {
+=======
+.InstructionButton{
+>>>>>>> a0442dfd85eec10c9205776a294b9a42336185c2:css/style.css
   padding: 2%;
-  margin: 1% 0%;
+  margin: 4% 0%;
   border-radius: 4px;
   background-color: #0074D9;
   border-color: #fff;
@@ -64,17 +69,45 @@ li a, #downloadButton {
   display: block;
   text-decoration: none;
   text-align: center;
+  width: 100%;
+  font-size: 26px;
 }
 
+<<<<<<< HEAD:public/css/style.css
 #downloadButton{
   width: 70%;
+=======
+.InstructionButton:hover{
+  color: #0074D9;
+  background-color: #fff;
+}
+
+.downloadButton{
+>>>>>>> a0442dfd85eec10c9205776a294b9a42336185c2:css/style.css
   display: inline-block;
   padding: 1%;
   text-align: center;
   margin: 0% 1%;
 }
 
+<<<<<<< HEAD:public/css/style.css
 input:hover{
+=======
+.downloadButton{
+  padding: 2%;
+  border-radius: 4px;
+  background-color: #0074D9;
+  border-color: #fff;
+  border: 2px;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-size: 26px;
+}
+
+.downloadButton:hover{
+>>>>>>> a0442dfd85eec10c9205776a294b9a42336185c2:css/style.css
   color: #0074D9;
   background-color: #fff;
   border-color: #0074D9;

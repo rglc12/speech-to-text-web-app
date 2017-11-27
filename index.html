@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Speech API</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<header>
+  <h1>Speech-to-text Web App</h1>
+</header>
+<body>
+    <div class="container">
+        <div class="transcriptionText">
+          <span id="speech"></span>
+          <span id="interim"></span>
+        </div>
+
+      <div class="instructions">
+        <div class="subTitle">
+          Instructions
+        </div>
+          <li>Start Recording = q</li>
+          <li>End Recording = e</li>
+          <button class="InstructionButton" type="button" name="button">Start Recording</button>
+          <button class="InstructionButton" type="button" name="button">End Recording</button>
+          <button class="InstructionButton" type="button" name="button">Magnify 150%</button>
+          <button class="InstructionButton" type="button" name="button">Magnify 200%</button>
+      </div>
+    </div>
+<button class="downloadButton" type="button" name="button">Download</button>
+</body>
+
+<script src="lib/speech.js"></script>
+
+</html>

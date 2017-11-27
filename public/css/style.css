@@ -54,11 +54,12 @@ li{
   font-size: 26px;
 }
 
-<<<<<<< HEAD:public/css/style.css
-li a, #downloadButton {
+
+<<<<<<< HEAD
+li a, #downloadButton{
 =======
-.InstructionButton{
->>>>>>> a0442dfd85eec10c9205776a294b9a42336185c2:css/style.css
+li a, #downloadButton {
+>>>>>>> 3becf04c67f2a329ce1004b94d8644d9c36982c1
   padding: 2%;
   margin: 4% 0%;
   border-radius: 4px;
@@ -73,25 +74,29 @@ li a, #downloadButton {
   font-size: 26px;
 }
 
-<<<<<<< HEAD:public/css/style.css
+<<<<<<< HEAD
 #downloadButton{
   width: 70%;
 =======
+
+#downloadButton{
+  width: 70%;
+
 .InstructionButton:hover{
   color: #0074D9;
   background-color: #fff;
 }
 
 .downloadButton{
->>>>>>> a0442dfd85eec10c9205776a294b9a42336185c2:css/style.css
+>>>>>>> 3becf04c67f2a329ce1004b94d8644d9c36982c1
   display: inline-block;
   padding: 1%;
   text-align: center;
   margin: 0% 1%;
 }
 
-<<<<<<< HEAD:public/css/style.css
-input:hover{
+<<<<<<< HEAD
+a:hover, #downloadButton:hover{
 =======
 .downloadButton{
   padding: 2%;
@@ -107,7 +112,7 @@ input:hover{
 }
 
 .downloadButton:hover{
->>>>>>> a0442dfd85eec10c9205776a294b9a42336185c2:css/style.css
+>>>>>>> 3becf04c67f2a329ce1004b94d8644d9c36982c1
   color: #0074D9;
   background-color: #fff;
   border-color: #0074D9;

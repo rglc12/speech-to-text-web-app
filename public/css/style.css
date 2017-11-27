@@ -54,12 +54,7 @@ li{
   font-size: 26px;
 }
 
-
-<<<<<<< HEAD
-li a, #downloadButton{
-=======
 li a, #downloadButton {
->>>>>>> 3becf04c67f2a329ce1004b94d8644d9c36982c1
   padding: 2%;
   margin: 4% 0%;
   border-radius: 4px;
@@ -74,11 +69,6 @@ li a, #downloadButton {
   font-size: 26px;
 }
 
-<<<<<<< HEAD
-#downloadButton{
-  width: 70%;
-=======
-
 #downloadButton{
   width: 70%;
 
@@ -87,32 +77,14 @@ li a, #downloadButton {
   background-color: #fff;
 }
 
-.downloadButton{
->>>>>>> 3becf04c67f2a329ce1004b94d8644d9c36982c1
+#downloadButton{
   display: inline-block;
   padding: 1%;
   text-align: center;
   margin: 0% 1%;
 }
 
-<<<<<<< HEAD
 a:hover, #downloadButton:hover{
-=======
-.downloadButton{
-  padding: 2%;
-  border-radius: 4px;
-  background-color: #0074D9;
-  border-color: #fff;
-  border: 2px;
-  color: #fff;
-  display: block;
-  text-decoration: none;
-  text-align: center;
-  font-size: 26px;
-}
-
-.downloadButton:hover{
->>>>>>> 3becf04c67f2a329ce1004b94d8644d9c36982c1
   color: #0074D9;
   background-color: #fff;
   border-color: #0074D9;

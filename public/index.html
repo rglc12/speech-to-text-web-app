@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Speech API</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script>
+
+        function myfunction1() { //remember code var
+            transcript = document.getElementById('speech').innerHTML;
+            localStorage.setItem('transcript', texttosave);
+        }
+
+        function myfunction2() { //recall code
+            document.getElementById('speech').innerHTML =
+            localStorage.getItem('transcript');
+        }
+
+    </script>
+
+</head>
+<header>
+  <h1>Speech-to-Text Web App</h1>
+</header>
+<body>
+    <div class="container">
+        <div id="transcriptionText">
+          <span id="speech"></span>
+          <span id="interim"></span>
+        </div>
+
+      <div class="instructions">
+        <div class="subTitle">
+          Instructions
+        </div>
+          <li> <a id="start">Start Recording</a></li>
+          <li> <a id="end">End Recording</a></li>
+          <li> <a id="mag150">Magnify 150%</a></li>
+          <li> <a id="mag200">Magnify 200%</a></li>
+          <li> <a id="reset">Reset Transcript</a></li>
+      </div>
+    </div>
+<li> <input type="submit" id="downloadButton" onclick="download()" value="Download Transcript"/></li>
+</body>
+
+<script src="https://cdn.socket.io/socket.io-1.0.6.js"></script>
+<script src="lib/speech.js"></script>
+<script src="lib/download.js"></script>
+
+</html>

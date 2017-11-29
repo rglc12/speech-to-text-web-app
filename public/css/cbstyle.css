@@ -6,19 +6,26 @@
 body {
     font-family: 'Roboto';
     font-size: 22px;
+    background-color: #111;
 }
 
 #interim {
     opacity: 0.5;
+    color: #fff;
+}
+
+#speech{
+  color: #fff;
 }
 
 h1{
   text-align: center;
   margin: 2% 0%;
+  color: #fff;
 }
 
 .subTitle{
-  color: #000;
+  color: #fff;
   font-size: 32px;
   font-weight: bold;
   padding-bottom: 2%;
@@ -37,7 +44,6 @@ h1{
   border-radius: 4px;
   width: 68%;
   float: left;
-  flex-shrink: 2;
 }
 
 .instructions{
@@ -47,10 +53,8 @@ h1{
   width: 22%;
   float: left;
   font-size: 0.8em;
-  background-color: #fff;
-  border-color: #000;
-  border: 1px solid;
-  flex-grow: 1;
+  background-color: #000;
+  border-color: #fff;
 }
 
 li{
@@ -72,7 +76,6 @@ li a, #downloadButton {
   text-align: center;
   width: 100%;
   font-size: 26px;
-  cursor: pointer;
 }
 
 #downloadButton{

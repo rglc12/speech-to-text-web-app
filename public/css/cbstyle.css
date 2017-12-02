@@ -69,17 +69,12 @@ li a, #downloadButton {
   border-radius: 4px;
   background-color: #0074D9;
   border-color: #fff;
-  border: 2px;
+  border: 1px;
   color: #fff;
   display: block;
   text-decoration: none;
   text-align: center;
-  width: 100%;
   font-size: 26px;
-}
-
-#downloadButton{
-  width: 70%;
 }
 
 .InstructionButton:hover{
@@ -92,6 +87,7 @@ li a, #downloadButton {
   padding: 1%;
   text-align: center;
   margin: 0% 1%;
+  width: 71%;
 }
 
 a:hover, #downloadButton:hover{
@@ -99,4 +95,19 @@ a:hover, #downloadButton:hover{
   background-color: #fff;
   border-color: #0074D9;
   border: 1px solid;
+}
+
+@media screen and (max-width: 740px) {
+    #transcriptionText {
+        margin-bottom: 2%;
+    }
+
+    #start, #end, #mag150, #mag200, #reset, #colorBlind{
+      margin: 0;
+      width: 98%;
+    }
+
+    #downloadButton{
+      width: 98%;
+    }
 }

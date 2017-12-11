@@ -25,7 +25,13 @@
                 <li><a id="mag150" class="mobileResize">Magnify 150%</a></li>
                 <li><a id="mag200" class="mobileResize">Magnify 200%</a></li>
                 <li><a id="reset" class="mobileResize">Reset Transcript</a></li>
-                <li><a id="colorBlind" class="mobileResize" onclick="changeColor()">Change Colour Contrast</a></li>
+                <div class="dropdown mobileResize">
+                  <button class="dropbtn">Change Colour Contrast</button>
+                  <div class="dropdown-content">
+                    <a onclick="revertColor()">Original</a>
+                    <a onclick="changeColor()">Inverted</a>
+                  </div>
+                </div>
             </div>
         </div>
 

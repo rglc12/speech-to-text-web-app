@@ -1,9 +1,8 @@
 <html lang="en">
-<head>
+<head id="headEl">
     <meta charset="UTF-8">
     <title>Web Speech API</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-
+    <link id="originalStyle" rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <header>
   <h1>Speech-to-Text Web App</h1>
@@ -16,18 +15,23 @@
         </div>
 
       <div class="instructions">
-        <div class="subTitle">
-          Instructions
-        </div>
-          <li><a id="start">Start Recording</a></li>
-          <li><a id="end">End Recording</a></li>
-          <li><a id="mag150">Magnify 150%</a></li>
-          <li><a id="mag200">Magnify 200%</a></li>
-          <li><a id="reset">Reset Transcript</a></li>
-          <li><a id="colorBlind" onclick="changeColor()">Change Colour Contrast</a></li>
+          <li><a id="start" class="mobileResize">Start Recording</a></li>
+          <li><a id="end" class="mobileResize">End Recording</a></li>
+          <li><a id="mag150" class="mobileResize">Magnify 150%</a></li>
+          <li><a id="mag200" class="mobileResize">Magnify 200%</a></li>
+          <li><a id="reset" class="mobileResize">Reset Transcript</a></li>
+          <li><a id="colorBlind" class="mobileResize" onclick="changeColor()">Change Colour Contrast</a></li>
       </div>
     </div>
-<li> <input type="submit" id="downloadButton" onclick="download()" value="Download Transcript"/></li>
+    <div class="container2">
+      <img class="imageButtons" src="img/play-button.svg" alt="">
+      <img class="imageButtons" src="img/pause.svg" alt="">
+      <img class="imageButtons" src="img/magnifying-glass.svg" alt="">
+      <img class="imageButtons" src="img/zoom-in.svg" alt="">
+      <img class="imageButtons" src="img/replay.svg" alt="">
+      <img class="imageButtons" src="img/down-arrow-in-a-circle.svg" alt="">
+    </div>
+ <input type="submit" id="downloadButton" onclick="download()" value="Download Transcript"/>
 </body>
 
 <script src="https://cdn.socket.io/socket.io-1.0.6.js"></script>

@@ -6,7 +6,7 @@
 body {
     font-family: 'Roboto';
     font-size: 22px;
-    background-color: #111;
+    background-color: #000;
 }
 
 #interim {
@@ -24,17 +24,9 @@ h1{
   color: #fff;
 }
 
-.subTitle{
-  color: #fff;
-  font-size: 32px;
-  font-weight: bold;
-  padding-bottom: 2%;
-  text-decoration: underline;
-}
-
 .container{
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
 }
 
 #transcriptionText{
@@ -44,6 +36,9 @@ h1{
   border-radius: 4px;
   width: 68%;
   float: left;
+  flex-grow: 1;
+  min-width: 250px;
+  color: #000;
 }
 
 .instructions{
@@ -54,7 +49,9 @@ h1{
   float: left;
   font-size: 0.8em;
   background-color: #000;
-  border-color: #fff;
+  border: 1px solid #fff;
+  flex-grow: 1;
+  min-width: 170px;
 }
 
 li{
@@ -63,18 +60,18 @@ li{
   font-size: 26px;
 }
 
-li a, #downloadButton {
+li a, #downloadButton, .dropbtn {
   padding: 2% 1%;
-  margin: 4% 0%;
+  margin: 2% 0%;
   border-radius: 4px;
-  background-color: #0074D9;
-  border-color: #fff;
-  border: 1px;
-  color: #fff;
+  background-color: #000;
+  border: 1px solid #fff;
+  color: #0057A3;
   display: block;
   text-decoration: none;
   text-align: center;
   font-size: 26px;
+  cursor: pointer;
 }
 
 .InstructionButton:hover{
@@ -87,7 +84,7 @@ li a, #downloadButton {
   padding: 1%;
   text-align: center;
   margin: 0% 1%;
-  width: 71%;
+  width: 98%;
 }
 
 a:hover, #downloadButton:hover{
@@ -97,14 +94,99 @@ a:hover, #downloadButton:hover{
   border: 1px solid;
 }
 
+.container2{
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid;
+  border-radius: 5px;
+  margin: 1% 1%;
+  border: 1px solid #fff;
+}
+
+.imageButtons{
+  width: 75px;
+  height: 75px;
+  margin: 1%;
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+/*.dropbtn {
+    background-color: #000;
+    color: #0057A3;
+    font-size: 26px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    margin-bottom: 1px;
+}*/
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #0074D9;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border: 1px solid;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: 1px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #000;
+  color: #0074D9;
+  border-radius: 5px;
+  border: 1px solid;
+  cursor: pointer;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #fff;
+    color: #0074D9;
+    border: 1px solid #fff;
+}
+
 @media screen and (max-width: 740px) {
     #transcriptionText {
         margin-bottom: 2%;
+        padding: 2%;
     }
 
-    #start, #end, #mag150, #mag200, #reset, #colorBlind{
+    .mobileResize{
       margin: 0;
       width: 98%;
+    }
+
+      .dropbtn{
+      width: 102.5%;
+    }
+
+    .dropdown-content{
+      width: 50%;
     }
 
     #downloadButton{

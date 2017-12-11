@@ -1,42 +1,50 @@
 <html lang="en">
-<head id="headEl">
-    <meta charset="UTF-8">
-    <title>Web Speech API</title>
-    <link id="originalStyle" rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<header>
-  <h1>Speech-to-Text Web App</h1>
-</header>
-<body>
-    <div class="container">
-        <div id="transcriptionText">
-          <span id="speech"></span>
-          <span id="interim"></span>
+    <head id="headEl">
+        <meta charset="UTF-8">
+        <title>Transcribe My Meeting</title>
+        <link id="originalStyle" rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <header>
+
+        <h1>Transcribe My Meeting!</h1>
+
+    </header>
+    <body>
+        <div class="container">
+
+            <!-- Visible text that is being transcribed for the user -->
+            <div id="transcriptionText">
+                <span id="speech"></span>
+                <span id="interim"></span>
+            </div>
+
+            <!-- English Text Buttons -->
+            <div class="instructions">
+                <li><a id="start" class="mobileResize">Start Recording</a></li>
+                <li><a id="end" class="mobileResize">End Recording</a></li>
+                <li><a id="mag150" class="mobileResize">Magnify 150%</a></li>
+                <li><a id="mag200" class="mobileResize">Magnify 200%</a></li>
+                <li><a id="reset" class="mobileResize">Reset Transcript</a></li>
+                <li><a id="colorBlind" class="mobileResize" onclick="changeColor()">Change Colour Contrast</a></li>
+            </div>
         </div>
 
-      <div class="instructions">
-          <li><a id="start" class="mobileResize">Start Recording</a></li>
-          <li><a id="end" class="mobileResize">End Recording</a></li>
-          <li><a id="mag150" class="mobileResize">Magnify 150%</a></li>
-          <li><a id="mag200" class="mobileResize">Magnify 200%</a></li>
-          <li><a id="reset" class="mobileResize">Reset Transcript</a></li>
-          <li><a id="colorBlind" class="mobileResize" onclick="changeColor()">Change Colour Contrast</a></li>
-      </div>
-    </div>
-    <div class="container2">
-      <img class="imageButtons" src="img/play-button.svg" alt="">
-      <img class="imageButtons" src="img/pause.svg" alt="">
-      <img class="imageButtons" src="img/magnifying-glass.svg" alt="">
-      <img class="imageButtons" src="img/zoom-in.svg" alt="">
-      <img class="imageButtons" src="img/replay.svg" alt="">
-      <img class="imageButtons" src="img/down-arrow-in-a-circle.svg" alt="">
-    </div>
- <input type="submit" id="downloadButton" onclick="download()" value="Download Transcript"/>
-</body>
+        <!-- International Icons so this can be used across multiple Geographies -->
+        <div class="container2">
+            <img id="startIcon" class="imageButtons" src="img/play-button.svg" alt="">
+            <img id="endIcon" class="imageButtons" src="img/pause.svg" alt="">
+            <img id="mag150Icon" class="imageButtons" src="img/magnifying-glass.svg" alt="">
+            <img id="mag200Icon" class="imageButtons" src="img/zoom-in.svg" alt="">
+            <img id="resetIcon" class="imageButtons" src="img/replay.svg" alt="">
+            <img class="imageButtons" src="img/down-arrow-in-a-circle.svg" alt="" onclick="download()">
+        </div>
+        <input type="submit" id="downloadButton" onclick="download()" value="Download Transcript"/>
+    </body>
 
-<script src="https://cdn.socket.io/socket.io-1.0.6.js"></script>
-<script src="lib/speech.js"></script>
-<script src="lib/download.js"></script>
-<script src="colorblind.js"></script>
+    <!-- JavaScript Files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <script src="js/speech.js"></script>
+    <script src="js/download.js"></script>
+    <script src="js/colorblind.js"></script>
 
 </html>

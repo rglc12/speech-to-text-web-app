@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/rglc12/speech-to-text-web-app/issues"
   },
-  "homepage": "https://github.com/rglc12/speech-to-text-web-app#readme"
+  "homepage": "https://github.com/rglc12/speech-to-text-web-app#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "socket.io": "^2.0.4"
+  }
 }

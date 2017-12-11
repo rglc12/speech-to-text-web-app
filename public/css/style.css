@@ -6,6 +6,7 @@
 body {
     font-family: 'Roboto';
     font-size: 22px;
+    background-color: #fff;
 }
 
 #interim {
@@ -15,14 +16,7 @@ body {
 h1{
   text-align: center;
   margin: 2% 0%;
-}
-
-.subTitle{
   color: #000;
-  font-size: 32px;
-  font-weight: bold;
-  padding-bottom: 2%;
-  text-decoration: underline;
 }
 
 .container{
@@ -39,6 +33,7 @@ h1{
   float: left;
   flex-grow: 1;
   min-width: 250px;
+  color: #000;
 }
 
 .instructions{
@@ -63,7 +58,7 @@ li{
 
 li a, #downloadButton {
   padding: 2% 1%;
-  margin: 4% 0%;
+  margin: 2% 0%;
   border-radius: 4px;
   background-color: #0074D9;
   border-color: #fff;
@@ -86,7 +81,7 @@ li a, #downloadButton {
   padding: 1%;
   text-align: center;
   margin: 0% 1%;
-  width: 71%;
+  width: 98%;
 }
 
 a:hover, #downloadButton:hover{
@@ -96,13 +91,29 @@ a:hover, #downloadButton:hover{
   border: 1px solid;
 }
 
+.container2{
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid;
+  border-radius: 5px;
+  margin: 1% 1%;
+}
+
+.imageButtons{
+  width: 75px;
+  height: 75px;
+  margin: 1%;
+  flex-grow: 1;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 740px) {
     #transcriptionText {
         margin-bottom: 2%;
         padding: 2%;
     }
 
-    #start, #end, #mag150, #mag200, #reset, #colorBlind{
+    .mobileResize{
       margin: 0;
       width: 98%;
     }

@@ -1,5 +1,5 @@
 {
-  "name": "Speech-to-Text Application",
+  "name": "speech-to-text-web-app",
   "version": "1.0.0",
   "description": "A Speech-to-Text Application that records speech and then creates a predicted transcipt based on the tokens found in the recording.",
   "main": "sio-server.js",

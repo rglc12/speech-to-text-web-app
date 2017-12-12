@@ -155,8 +155,10 @@ window.onload = function() {
         var startBut = document.getElementById("startIcon");
         var end = document.getElementById("end");
         var endBut = document.getElementById("endIcon");
+        var OrgMag = document.getElementById("mag100");
+        var OrgMagIcon = document.getElementById("mag100Icon");
         var mag150 = document.getElementById("mag150");
-        var OrgMagIcon = document.getElementById("mag150Icon");
+        var mag150Icon = document.getElementById("mag150Icon");
         var mag200 = document.getElementById("mag200");
         var mag200Icon = document.getElementById("mag200Icon");
         var resetBut = document.getElementById("reset");
@@ -222,17 +224,30 @@ window.onload = function() {
             The Accessibility part with the magnification of the text.
          */
 
-        mag150.addEventListener("click", function () {
+        OrgMag.addEventListener("click", function () {
 
-            document.getElementById("transcriptionText").style.fontSize = "33px";
+            document.getElementById("transcriptionText").style.fontSize = "22px";
 
         });
+
 
         OrgMagIcon.addEventListener("click", function () {
 
             document.getElementById("transcriptionText").style.fontSize = "22px";
 
         });
+
+        mag150Icon.addEventListener("click", function () {
+
+            document.getElementById("transcriptionText").style.fontSize = "33px";
+
+        });
+
+       mag150.addEventListener("click", function () {
+
+           document.getElementById("transcriptionText").style.fontSize = "33px";
+
+       });
 
         mag200.addEventListener("click", function () {
 

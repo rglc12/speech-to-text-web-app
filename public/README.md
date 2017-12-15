@@ -3,7 +3,7 @@ A Web Application that transcribes speech into text using the [Web Speech API](h
 
 ## Prerequisites
 
-- Please have the latest version of [Git](https://git-scm.com/) and [Node.js](https://nodejs.org/) installed on your machine (NPM should come with you edition of Node.js).
+- Please have [Git](https://git-scm.com/) and [Node.js](https://nodejs.org/) installed on your machine (NPM should come with you edition of Node.js).
 -- You can check what version you have in your terminal with the following commands: Git -> `git --version`, Node -> `node -v` & NPM -> `npm -v`
 
 ## Installation

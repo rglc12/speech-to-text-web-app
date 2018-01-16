@@ -1,5 +1,5 @@
 # Speech to Text Web-App
-A Web Application that transcribes speech into text using the [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API). This app is designed to be affordable and to aid students, business personel, those who have hearing impairments and many others.
+A Web Application that transcribes speech into text using the [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API). This app is designed to be affordable and to aid students in large lecture halls, business personnel in meetings, those who have hearing impairments and many others.
 
 ## Prerequisites
 
